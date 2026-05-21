@@ -7,7 +7,7 @@ function CatApp() {
   const FetchCatImage = async () => {
     try {
       const response = await axios.get(
-        "https://api.thecatapi.com/v1/images/search",
+        "https://pixabay.com/api/?key=YOUR_API_KEY&q=fantasy&image_type=illustration",
       );
       SetCatImage(response.data[0].url);
     } catch (error) {
